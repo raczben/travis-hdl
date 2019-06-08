@@ -5,7 +5,7 @@ srcdir=/mnt/data/hello_world
 ghdl --version
 
 # List the files (validating the fileshare/mount)
-ls /mnt/data/hello_world
+ls $srcdir
 
 # Analyse the source
 ghdl -a $srcdir/hello_world.vhd

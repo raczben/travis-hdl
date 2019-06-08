@@ -1,12 +1,15 @@
+# The directori of HDL source files
+srcdir=/mnt/data/adder
+
 # Test GHDL itself
 ghdl --version
 
 # List the files (validating the fileshare/mount)
-ls /mnt/data/adder
+ls $srcdir
 
 # Analyse sources
-ghdl -a /mnt/data/test/adder.vhd
-ghdl -a /mnt/data/test/adder_tb.vhd
+ghdl -a $srcdir/adder.vhd
+ghdl -a $srcdir/adder_tb.vhd
 
 # Elaborate the top-level
 ghdl -e adder_tb
