@@ -1,6 +1,12 @@
 # travis-hdl
 Demonstrating continuous integration of hdl codes using travis-ci
 
+This badge is a live build status on travis-ci:
+
+[![Build Status](https://travis-ci.org/raczben/yard.svg?branch=dev)](https://travis-ci.org/raczben/travis-hdl)
+[![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 This is a sample repository for [this][1] medium study.
 
 Fortunately there are more and more open-source FPGA projects. There are some open testing
