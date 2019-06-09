@@ -20,6 +20,11 @@ script:
   - >
     docker run -t -v `pwd`:/mnt/data ghdl/ghdl:stretch-mcode
     /bin/bash -c  "chmod u+x /mnt/data/adder/adder.sh; /mnt/data/adder/adder.sh"
+    
+    # Mount the repo to docker, and run the UVVM uart example
+  - >
+    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:stretch-mcode
+    /bin/bash -c  "chmod u+x /mnt/data/UVVM_scripts/*; /mnt/data/UVVM_scripts/run_all.sh"
 
 # Notification is optional
 notifications:

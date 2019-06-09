@@ -1,0 +1,6 @@
+
+# GHDL library files
+*.cf
+
+_Alert.txt
+_Log.txt
