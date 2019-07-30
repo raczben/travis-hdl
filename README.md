@@ -3,7 +3,7 @@ Demonstrating continuous integration of hdl codes using travis-ci
 
 This badge is a live build status on travis-ci:
 
-[![Build Status](https://travis-ci.org/raczben/yard.svg?branch=dev)](https://travis-ci.org/raczben/travis-hdl)
+[![Build Status](https://travis-ci.org/raczben/travis-hdl.svg?branch=master)](https://travis-ci.org/raczben/travis-hdl)
 [![License: GPL v3](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -36,7 +36,7 @@ Now there are only two simple hdl source folder:
 The compiler and runner scripts located inside the source folders beside the source files. These
 scripts are called by the docker, which can run on travis-ci.
  
-  [1]: https://medium.com/continous-integration-for-open-fpga-projects
+  [1]: https://medium.com/@betontalpfa/continous-integration-for-open-fpga-projects-29eab2c3b58b
   [2]: https://bitvis.no/dev-tools/uvvm/
   [3]: http://ghdl.free.fr/
   [4]: https://www.docker.com/
