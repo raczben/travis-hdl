@@ -9,21 +9,21 @@ services:
 # Here are the list of run scripts of different DUTs/testcases
 script:
     # Testing the installation of the ghdl
-  - docker run -t ghdl/ghdl:stretch-mcode ghdl --version
+  - docker run -t ghdl/ghdl:buster-mcode ghdl --version
   
     # Mount the repo to docker, and run the hello world example
   - > 
-    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:stretch-mcode
+    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:buster-mcode
     /bin/bash -c  "chmod u+x /mnt/data/hello_world/hello_world.sh; /mnt/data/hello_world/hello_world.sh"
     
     # Mount the repo to docker, and run the adder example
   - >
-    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:stretch-mcode
+    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:buster-mcode
     /bin/bash -c  "chmod u+x /mnt/data/adder/adder.sh; /mnt/data/adder/adder.sh"
     
     # Mount the repo to docker, and run the UVVM uart example
   - >
-    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:stretch-mcode
+    docker run -t -v `pwd`:/mnt/data ghdl/ghdl:buster-mcode
     /bin/bash -c  "chmod u+x /mnt/data/UVVM_scripts/*; /mnt/data/UVVM_scripts/run_all.sh"
 
 # Notification is optional
